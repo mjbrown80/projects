@@ -10,4 +10,18 @@ CREATE TABLE users (
 	CONSTRAINT PK_user PRIMARY KEY (user_id)
 );
 
+CREATE TABLE movies (
+    movie_id SERIAL PRIMARY KEY,
+    api_id int NOT NULL,
+    movie_title varchar(200) NOT NULL,
+    movie_genre varchar(50) NOT NULL,
+    movie_description varchar (200),
+    movie_director varchar(50),
+    type_dvd boolean,
+    number_discs int,
+    url varchar(100),
+    thumbnail varchar
+
+);
+
 COMMIT TRANSACTION;
